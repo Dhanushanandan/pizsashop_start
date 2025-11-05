@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class ActivitySignupBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final EditText email;
@@ -32,7 +32,7 @@ public final class ActivitySignupBinding implements ViewBinding {
   @NonNull
   public final Button signupBtn;
 
-  private ActivitySignupBinding(@NonNull LinearLayout rootView, @NonNull EditText email,
+  private ActivitySignupBinding(@NonNull ScrollView rootView, @NonNull EditText email,
       @NonNull EditText name, @NonNull EditText password, @NonNull Button signupBtn) {
     this.rootView = rootView;
     this.email = email;
@@ -43,7 +43,7 @@ public final class ActivitySignupBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -92,7 +92,7 @@ public final class ActivitySignupBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignupBinding((LinearLayout) rootView, email, name, password, signupBtn);
+      return new ActivitySignupBinding((ScrollView) rootView, email, name, password, signupBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

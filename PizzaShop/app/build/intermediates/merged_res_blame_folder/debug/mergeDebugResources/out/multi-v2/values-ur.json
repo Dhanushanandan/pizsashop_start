@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pizzashop.app-mergeDebugResources-39:/values-ur/values-ur.xml",
+            "outputFile": "com.example.pizzashop.app-mergeDebugResources-40:/values-ur/values-ur.xml",
             "map": [
                 {
                     "source": "C:\\Users\\danus\\.gradle\\caches\\8.9\\transforms\\e0b0482c7a16e1cef5c9f5c99c617b34\\transformed\\jetified-credentials-1.2.0-rc01\\res\\values-ur\\values-ur.xml",

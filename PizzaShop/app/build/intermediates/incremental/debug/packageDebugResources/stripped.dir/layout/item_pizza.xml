@@ -4,12 +4,13 @@
     android:layout_margin="8dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="6dp">
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="#1E1E1E">
 
     <LinearLayout
         android:orientation="horizontal"
-        android:padding="8dp"
+        android:padding="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -18,11 +19,13 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:src="@drawable/pizza_logo"
+            android:contentDescription="Pizza Image"
+            android:background="@drawable/rounded_image_dark"/>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="16dp"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent">
@@ -31,22 +34,26 @@
                 android:id="@+id/pizzaName"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:textColor="@color/black"
+                android:textColor="#FFFFFF"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"/>
 
             <TextView
                 android:id="@+id/pizzaDesc"
                 android:textSize="14sp"
-                android:textColor="@color/dark_gray"
+                android:textColor="#BBBBBB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"/>
+                android:layout_marginTop="4dp"
+                android:maxLines="2"
+                android:ellipsize="end"/>
 
             <TextView
                 android:id="@+id/pizzaPrice"
                 android:textStyle="bold"
-                android:textColor="@color/primaryColor"
+                android:textColor="#FF7043"
                 android:textSize="16sp"
                 android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
@@ -55,9 +62,12 @@
             <Button
                 android:id="@+id/addToCartButton"
                 android:text="Add to Cart"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF7043"
+                android:background="@drawable/rounded_button_dark"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

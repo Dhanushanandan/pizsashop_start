@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pizzashop.app-mergeDebugResources-39:/values-bn/values-bn.xml",
+            "outputFile": "com.example.pizzashop.app-mergeDebugResources-40:/values-bn/values-bn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\danus\\.gradle\\caches\\8.9\\transforms\\18c28d2f5d0ec57586b8aec07d967aff\\transformed\\browser-1.4.0\\res\\values-bn\\values-bn.xml",

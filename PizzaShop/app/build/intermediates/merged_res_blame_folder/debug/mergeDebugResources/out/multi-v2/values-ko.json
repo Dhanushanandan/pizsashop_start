@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pizzashop.app-mergeDebugResources-39:/values-ko/values-ko.xml",
+            "outputFile": "com.example.pizzashop.app-mergeDebugResources-40:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\danus\\.gradle\\caches\\8.9\\transforms\\468c474dd4c5f3e2afb9702b45f5bf5b\\transformed\\core-1.15.0\\res\\values-ko\\values-ko.xml",

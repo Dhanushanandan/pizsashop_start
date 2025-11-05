@@ -6,7 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.ScrollView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -18,32 +21,45 @@ import java.lang.String;
 
 public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final EditText email;
 
   @NonNull
+  public final TextView forgotPassword;
+
+  @NonNull
   public final Button loginBtn;
+
+  @NonNull
+  public final ImageView logoImage;
 
   @NonNull
   public final EditText password;
 
   @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
   public final Button toSignupBtn;
 
-  private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull EditText email,
-      @NonNull Button loginBtn, @NonNull EditText password, @NonNull Button toSignupBtn) {
+  private ActivityLoginBinding(@NonNull ScrollView rootView, @NonNull EditText email,
+      @NonNull TextView forgotPassword, @NonNull Button loginBtn, @NonNull ImageView logoImage,
+      @NonNull EditText password, @NonNull ProgressBar progressBar, @NonNull Button toSignupBtn) {
     this.rootView = rootView;
     this.email = email;
+    this.forgotPassword = forgotPassword;
     this.loginBtn = loginBtn;
+    this.logoImage = logoImage;
     this.password = password;
+    this.progressBar = progressBar;
     this.toSignupBtn = toSignupBtn;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -74,9 +90,21 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.forgotPassword;
+      TextView forgotPassword = ViewBindings.findChildViewById(rootView, id);
+      if (forgotPassword == null) {
+        break missingId;
+      }
+
       id = R.id.loginBtn;
       Button loginBtn = ViewBindings.findChildViewById(rootView, id);
       if (loginBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.logoImage;
+      ImageView logoImage = ViewBindings.findChildViewById(rootView, id);
+      if (logoImage == null) {
         break missingId;
       }
 
@@ -86,14 +114,20 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.toSignupBtn;
       Button toSignupBtn = ViewBindings.findChildViewById(rootView, id);
       if (toSignupBtn == null) {
         break missingId;
       }
 
-      return new ActivityLoginBinding((LinearLayout) rootView, email, loginBtn, password,
-          toSignupBtn);
+      return new ActivityLoginBinding((ScrollView) rootView, email, forgotPassword, loginBtn,
+          logoImage, password, progressBar, toSignupBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -11,6 +11,7 @@ import com.example.pizzashop.models.Pizza
 import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
     private val pizzas = mutableListOf<Pizza>()
 
@@ -20,9 +21,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.pizzaRecycler.layoutManager = LinearLayoutManager(this)
-        val adapter = PizzasAdapter(pizzas){ p ->
-            Cart.add(p)
-            Toast.makeText(this, "Added to cart: ${p.name}", Toast.LENGTH_SHORT).show()
+        val adapter = PizzasAdapter(pizzas) { pizza ->
+            Cart.add(pizza)
+            Toast.makeText(this, "Added to cart: ${pizza.name}", Toast.LENGTH_SHORT).show()
         }
         binding.pizzaRecycler.adapter = adapter
 
@@ -30,15 +31,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, CartActivity::class.java))
         }
 
-        // Load pizzas from Realtime Database node "pizzas"
+        // Load pizzas from Firebase
         val ref = FirebaseDatabase.getInstance().getReference("pizzas")
         ref.get().addOnSuccessListener { snap ->
-            val list = mutableListOf<Pizza>()
-            for (c in snap.children) {
-                val p = c.getValue(Pizza::class.java)
-                if (p != null) list.add(p)
-            }
-            pizzas.clear(); pizzas.addAll(list); adapter.update(list)
+            val list = snap.children.mapNotNull { it.getValue(Pizza::class.java) }
+            pizzas.clear()
+            pizzas.addAll(list)
+            adapter.update(list)
         }.addOnFailureListener {
             Toast.makeText(this, "Failed to load pizzas", Toast.LENGTH_SHORT).show()
         }

@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,20 +21,20 @@ public final class ActivityMainBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final LinearLayout mainRoot;
+
+  @NonNull
   public final Button openCartButton;
 
   @NonNull
   public final RecyclerView pizzaRecycler;
 
-  @NonNull
-  public final TextView titleText;
-
-  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Button openCartButton,
-      @NonNull RecyclerView pizzaRecycler, @NonNull TextView titleText) {
+  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout mainRoot,
+      @NonNull Button openCartButton, @NonNull RecyclerView pizzaRecycler) {
     this.rootView = rootView;
+    this.mainRoot = mainRoot;
     this.openCartButton = openCartButton;
     this.pizzaRecycler = pizzaRecycler;
-    this.titleText = titleText;
   }
 
   @Override
@@ -65,6 +64,8 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      LinearLayout mainRoot = (LinearLayout) rootView;
+
       id = R.id.openCartButton;
       Button openCartButton = ViewBindings.findChildViewById(rootView, id);
       if (openCartButton == null) {
@@ -77,14 +78,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.titleText;
-      TextView titleText = ViewBindings.findChildViewById(rootView, id);
-      if (titleText == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((LinearLayout) rootView, openCartButton, pizzaRecycler,
-          titleText);
+      return new ActivityMainBinding((LinearLayout) rootView, mainRoot, openCartButton,
+          pizzaRecycler);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

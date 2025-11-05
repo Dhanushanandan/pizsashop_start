@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "204680777653",
+    "firebase_url": "https://pizzashop-24aae-default-rtdb.firebaseio.com",
+    "project_id": "pizzashop-24aae",
+    "storage_bucket": "pizzashop-24aae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204680777653:android:2d98ee5c73f70432a853fc",
+        "android_client_info": {
+          "package_name": "com.example.pizzashop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2sYoNfycObZ_gMHcC3KcASCzh632iRBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

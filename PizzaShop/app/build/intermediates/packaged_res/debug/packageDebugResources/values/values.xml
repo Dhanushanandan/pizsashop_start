@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="dark_gray">#555555</color>
+    <color name="primaryColor">#FF5722</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">PizzaShop</string>
+    <string name="firebase_database_url" translatable="false">https://pizzashop-24aae-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">204680777653</string>
+    <string name="google_api_key" translatable="false">AIzaSyD2sYoNfycObZ_gMHcC3KcASCzh632iRBs</string>
+    <string name="google_app_id" translatable="false">1:204680777653:android:2d98ee5c73f70432a853fc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD2sYoNfycObZ_gMHcC3KcASCzh632iRBs</string>
+    <string name="google_storage_bucket" translatable="false">pizzashop-24aae.firebasestorage.app</string>
+    <string name="project_id" translatable="false">pizzashop-24aae</string>
+    <style name="Theme.PizzaShop" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.example.pizzashop.app-mergeReleaseResources-40:/layout/activity_signup.xml",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-mergeReleaseResources-40:/layout/activity_cart.xml",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_cart.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-mergeReleaseResources-40:/layout/activity_login.xml",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-mergeReleaseResources-40:/layout/activity_add_address.xml",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_add_address.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-mergeReleaseResources-40:/layout/item_pizza.xml",
+        "source": "com.example.pizzashop.app-main-42:/layout/item_pizza.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-mergeReleaseResources-40:/layout/activity_address_list.xml",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_address_list.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-mergeReleaseResources-40:/layout/activity_main.xml",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-mergeReleaseResources-40:/layout/item_delivery_address.xml",
+        "source": "com.example.pizzashop.app-main-42:/layout/item_delivery_address.xml"
+    }
+]

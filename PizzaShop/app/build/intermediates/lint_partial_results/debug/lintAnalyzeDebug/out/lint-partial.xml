@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.example.pizzashop.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.color.purple_200"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="1"
+            column="19"
+            startOffset="18"
+            endLine="1"
+            endColumn="36"
+            endOffset="35"/>
+        <location id="R.color.teal_200"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="1"
+            column="99"
+            startOffset="98"
+            endLine="1"
+            endColumn="114"
+            endOffset="113"/>
+        <location id="R.string.app_name"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="1"
+            column="20"
+            startOffset="19"
+            endLine="1"
+            endColumn="35"
+            endOffset="34"/>
+        <entry
+            name="model"
+            string="color[purple_200(D),purple_500(U),teal_200(D),black(U)],drawable[ic_launcher_background(U),ic_launcher_foreground(U),ic_launcher_foreground_1(R)],id[street(U),city(U),postal(U),saveAddressBtn(U),addAddressBtn(U),addressesRecycler(U),cartRecycler(U),placeOrderBtn(U),email(U),password(U),loginBtn(U),toSignupBtn(U),welcomeText(D),pizzaRecycler(U),openCartButton(U),name(U),signupBtn(U),addressText(U),deleteButton(U),pizzaName(U),addToCartBtn(U)],layout[activity_add_address(U),activity_address_list(U),activity_cart(U),activity_login(U),activity_main(U),activity_signup(U),item_delivery_address(U),item_pizza(U)],mipmap[ic_launcher(U),ic_launcher_round(U)],string[app_name(D)],style[Theme_PizzaShop(U),Theme_MaterialComponents_DayNight_DarkActionBar(R)];5^6,24^4^5,25^4^5,27^28^1^3;;;"/>
+    </map>
+
+</incidents>

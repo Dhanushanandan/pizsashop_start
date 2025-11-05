@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/layout_activity_login.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/layout_activity_cart.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_cart.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/layout_item_pizza.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/layout/item_pizza.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/layout_activity_main.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/layout_item_delivery_address.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/layout/item_delivery_address.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/layout_activity_signup.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/layout_activity_address_list.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_address_list.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/layout_activity_add_address.xml.flat",
+        "source": "com.example.pizzashop.app-main-42:/layout/activity_add_address.xml"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pizzashop.app-release-41:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pizzashop.app-main-42:/mipmap-xxhdpi/ic_launcher_round.webp"
+    }
+]
